@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,7 +7,7 @@
     <meta name="description" content="教育学校">
     <meta name="format-detection" content="telephone=no"><!-- 禁止IPHONE识别手机号码 -->
     <meta name="viewport" content="width=device-width,user-scalable=no, initial-scale=1">
-    <title>东莞理工学院-教学管理</title>
+    <title>东莞理工学院-教学安排</title>
     <!-- css -->
     <link rel="stylesheet" type="text/css" href="css/index.css">
     <link rel="stylesheet" type="text/css" href="css/aos.css">
@@ -17,6 +18,8 @@
 </head>
 
 <body>
+
+
 <!-- 头部 -->
 <div class="head">
     <div>
@@ -42,11 +45,9 @@
         </div>
         <div class="dh">
             <ul>
-                <li><a href="index.html"><p>网站</p>
-                    <p>首页</p></a></li>
-                <li>
-                    <a href="aboutCourse.html"><p>课程</p>
-                        <p>概况</p></a>
+                <li><a href="index.html"><p>网站</p><p>首页</p></a></li>
+                <li >
+                    <a href="aboutCourse.html"><p>课程</p><p>概况</p></a>
                     <dl>
                         <dd><a href="aboutCourse.html">课程简介</a></dd>
                         <dd><a href="aboutCourse_tese.html">课程特色</a></dd>
@@ -76,8 +77,7 @@
                     </dl>
                 </li>
                 <li>
-                    <a href="Teacher-fuzeren.html"><p>教师</p>
-                        <p>团队</p></a>
+                    <a href="Teacher-fuzeren.html"><p>教师</p><p>团队</p></a>
                     <dl>
                         <dd><a href="Teacher-fuzeren.html">课程负责人</a></dd>
                         <dd><a href="Teacher-jiaoshituandui.html">课程教学团队</a></dd>
@@ -86,8 +86,7 @@
                     </dl>
                 </li>
                 <li>
-                    <a href="jiaoxueziyuan-kechengkejian.html"><p>教学</p>
-                        <p>资源</p></a>
+                    <a href="jiaoxueziyuan-kechengkejian.html"><p>教学</p><p>资源</p></a>
                     <dl>
                         <!--<dd><a href="ChungZhis.html">重要通知</a></dd>-->
                         <dd><a href="jiaoxueziyuan-kechengkejian.html">课程课件</a></dd>
@@ -99,8 +98,7 @@
                     </dl>
                 </li>
                 <li>
-                    <a href="jiaoxuexiaogxiaoguo-xiaowaizhuanjia.html"><p>教学</p>
-                        <p>效果</p></a>
+                    <a href="jiaoxuexiaogxiaoguo-xiaowaizhuanjia.html"><p>教学</p><p>效果</p></a>
                     <dl>
                         <dd><a href="jiaoxuexiaogxiaoguo-xiaowaizhuanjia.html">校外专家评价</a></dd>
                         <dd><a href="jiaoxuexiaogxiaoguo-xiaoneijiandu.html">校内督导评价</a></dd>
@@ -133,8 +131,8 @@
 </div>
 
 <script type="text/javascript">
-    $(document).ready(function () {
-        $(".head .dh ul li").hover(function () {
+    $(document).ready(function(){
+        $(".head .dh ul li").hover(function(){
             $(this).find("dl").slideToggle(200);
             // $(this).find("dl").stop().slideToggle(200);
         });
@@ -142,24 +140,26 @@
 </script>
 
 
+
 <!-- 左侧菜单手风琴导航效果 -->
 <script type="text/javascript">
-    function initMenu() {
+    function initMenu(){
         $('#sidemenu dl').hide();
-        $('#sidemenu li a').click(function () {
+        $('#sidemenu li a').click(function(){
             var checkElement = $(this).next();
-            if ((checkElement.is('dl')) && (checkElement.is(':visible'))) {
+            if((checkElement.is('dl')) && (checkElement.is(':visible')))
+            {
                 return false;
             }
-            if ((checkElement.is('dl')) && (!checkElement.is(':visible'))) {
+            if((checkElement.is('dl')) && (!checkElement.is(':visible')))
+            {
                 $('#sidemenu dl:visible').slideUp('normal');
                 checkElement.slideDown('normal');
                 return false;
             }
         });
     }
-
-    $(document).ready(function () {
+    $(document).ready(function(){
         initMenu();
     })
 </script>
@@ -168,39 +168,51 @@
 <div class="px1200">
     <div class="ziye">
         <div class="left" aos="fade-up-right">
-            <h3 class="biaot">教学管理</h3>
+            <h3 class="biaot">教学互动</h3>
             <ul id="sidemenu">
-                <li><a href="ChungLife_dt.html">开课计划</a></li>
-                <li class="no"><a href="ChungLife_dt_sk.html">上课班级</a></li>
-                <li><a href="ChungLife_dt_hmc.html">班级花名册</a></li>
-                <li><a href="ChungLife_dt_cjd.html">班级成绩单</a></li>
-                <li><a href="ChungLife_dt_zy.html">学生作业案例</a></li>
+                <li ><a href="Jiaoxuehudong-wechat.html">微信群</a></li>
+                <li ><a href="Jiaoxuehudong-QQ.html">QQ群</a></li>
+                <li  class="no"><a href="#">网页版</a></li>
+
             </ul>
+            <!--            <div class="erwm">-->
+            <!--                <div><img src="images/erweim.jpg"></div>-->
+            <!--            </div>-->
+            <!--            <p class="erwm-text">关注东莞理工学院微信公众号</p>-->
         </div>
         <div class="right" aos="fade-up-left">
-            <div class="dqlj"><a href="ChungLife_dt.html">教学管理</a>·<a href="ChungLife_dt_sk.html">上课班级</a></div>
+            <div class="dqlj"><a href="index.html">首页</a>·<a href="#">教学互动</a>·<a>贴吧</a></div>
             <div class="right_biaot">
                 <i></i>
-                <h2>上课班级</h2>
+                <h2>东莞理工学院贴吧</h2>
                 <i class="right"></i>
             </div>
             <!-- 详情内容 -->
             <div class="but_list">
                 <ul>
+                    <li class="img"><a href="ChungLife_dt_xq.html"><img src="images/DGUT_img.jpg"></a></li>
                     <li>
-                        <a href="#">网络空间安全学院2019-2020年度大学物理C上课班级</a>
+                        <a href="#">请问老师高斯定理怎么理解</a>
                         <span>[2019-01-09]</span>
                     </li>
                     <li>
-                        <a href="#">网络空间安全学院2019-2020年度软件需求分析上课班级</a>
+                        <a href="#">关于软件需求问题的讨论</a>
                         <span>[2019-01-09]</span>
                     </li>
                     <li>
-                        <a href="#">网络空间安全学院2019-2020年度软件测试上课班级</a>
+                        <a href="#">请问老师英语应该怎么学</a>
                         <span>[2019-01-09]</span>
                     </li>
                     <li>
-                        <a href="#">网络空间安全学院2019-2020年度体育与健康上课班级</a>
+                        <a href="#">请问老师今天上课吗</a>
+                        <span>[2019-01-09]</span>
+                    </li>
+                    <li>
+                        <a href="#">请问老师定积分的意义是什么</a>
+                        <span>[2019-01-09]</span>
+                    </li>
+                    <li>
+                        <a href="#">请老师推荐几本计算机网络书籍</a>
                         <span>[2019-01-09]</span>
                     </li>
                 </ul>
@@ -246,15 +258,15 @@
         </div>
         <div class="beian">
             <div class="px1200">
-                <p>东莞理工学院 Copyright © 2016-2020 All Rights Reserved 　粤ICP备05012247号 总数：439767 </p>
+                <p>东莞理工学院  Copyright © 2016-2020 All Rights Reserved    　粤ICP备05012247号       总数：439767 </p>
             </div>
         </div>
     </div>
 </div>
 <script type="text/javascript">
-    $(document).ready(function () {
+    $(document).ready(function(){
 
-        $(".footerZd .yq").hover(function () {
+        $(".footerZd .yq").hover(function(){
             $(".xl").slideToggle();
         });
 
@@ -278,7 +290,7 @@
 <script>
     hljs.initHighlightingOnLoad();
 
-    $('.hero__scroll').on('click', function (e) {
+    $('.hero__scroll').on('click', function(e) {
         $('html, body').animate({
             scrollTop: $(window).height()
         }, 1200);
